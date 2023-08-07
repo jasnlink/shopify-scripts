@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "allowJs": true,
+        "noImplicitAny": true,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "module": "ES2020",
+        "moduleResolution": "node",
+        "rootDir": "src",
+        "outDir": "_build",
+        "paths": {
+            "@/*": ["./*"]
+        }
+    },
+    "include": ["./src/**/*.ts"],
+    "exclude": ["node_modules", "codegen.ts", "src/_generated", "_data"]
+}

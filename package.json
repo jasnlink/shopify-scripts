@@ -1,0 +1,33 @@
+{
+  "name": "shopify-scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fetch": "npx tsc && node _build/index.js",
+    "start": "npx tsc && node _build/%NPM_CONFIG_EXEC%/index.js",
+    "codegen": "npx graphql-codegen"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@graphql-codegen/cli": "^5.0.0",
+    "@graphql-codegen/schema-ast": "^4.0.0",
+    "@graphql-codegen/typescript": "^4.0.1",
+    "@graphql-codegen/typescript-graphql-request": "^5.0.0",
+    "@graphql-codegen/typescript-operations": "^4.0.1",
+    "@types/node": "^20.4.8",
+    "dotenv": "^16.3.1",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "graphql": "^16.7.1",
+    "graphql-tag": "^2.12.6",
+    "node-fetch": "^3.3.2",
+    "shopify-api-node": "^3.12.6"
+  }
+}
